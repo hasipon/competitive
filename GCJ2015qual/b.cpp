@@ -9,9 +9,14 @@ struct Solver {
 		P.resize(D);
 		for (int& x : P) cin >> x;
 	}
-	int r = 0;
+	int r;
 	void run() {
 		r = 1<<30;
+		for (int i = 1; i <= r; ++ i) {
+			int rr = i;
+			for (int x : P) rr += (max(x - i, 0) + i-1) / i;
+			r = min(r, rr);
+		}
 		for (int i = 0; i < r; ++ i) {
 			sort(P.begin(), P.end());
 			r = min(r, P.back() + i);
