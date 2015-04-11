@@ -1,44 +1,29 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int T[4][4][4] = {
-	{
-		{1,1,1,1},
-		{1,1,1,1},
-		{1,1,1,1},
-		{1,1,1,1},
-	},
-	{
-		{0,1,0,1},
-		{1,1,1,1},
-		{0,1,0,1},
-		{1,1,1,1},
-	},
-	{
-		{0,0,0,0},
-		{0,0,1,0},
-		{0,1,1,1},
-		{0,0,1,0},
-	},
-	{
-		{0,0,0,0},
-		{0,0,0,0},
-		{0,0,0,1},
-		{0,0,1,1},
-	},
-};
-
 struct Solver {
 	int X, R, C;
 	Solver() {
 		cin >> X >> R >> C;
 	}
+	bool solve(int x, int y) {
+		if (x * y % X != 0) return false;
+		if (X == 1) return true;
+		if (X == 2) return true;
+		if (X == 3) return x >= 2;
+		if (X == 4) return x >= 3;
+		if (X == 5) return x >= 4 || (x == 3 && y >= 10);
+		if (X == 6) return x >= 4;
+		return false;
+	}
+	bool r;
 	void run() {
+		r = solve(min(R,C), max(R,C));
 	}
 	int tt_;
 	void output() {
 		cout << "Case #" << tt_ << ": ";
-		cout << (T[X-1][R-1][C-1] ? "GABRIEL" : "RICHARD") << endl;
+		cout << (r ? "GABRIEL" : "RICHARD") << endl;
 	}
 };
 
