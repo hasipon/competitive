@@ -10,16 +10,26 @@ struct Solver {
 		for (int& x : M) cin >> x;
 	}
 	int r;
+	long f(long t) {
+		long rr = 0;
+		for (int x : M) rr += (t+x-1) / x;
+		return rr;
+	}
 	void run() {
-		vector<long> a(B);
-		for (int i = 0; i < N-1; ++ i) {
-			int p = 0;
-			for (int i = 1; i < B; ++ i) if (a[i] < a[p]) p = i;
-			a[p] += M[p];
+		long L = 0, R = 1L<<60;
+		while (R-L >= 2) {
+			long M = (L+R)/2;
+			if (N <= f(M)) R = M; else L = M;
 		}
-		r = 0;
-		for (int i = 1; i < B; ++ i) if (a[i] < a[r]) r = i;
-		++ r;
+		long c = N - f(R-1);
+		for (int i = 0; i < B; ++ i) {
+			if ((R-1) % M[i] == 0) {
+				if (c == 1) {
+					r = i + 1;
+					break;
+				} else -- c;
+			}
+		}
 	}
 	int tt_;
 	void output() {
