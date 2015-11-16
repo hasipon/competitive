@@ -1,0 +1,9 @@
+div1C/div2E
+操作Aで(a,b,c,d)が(a,b,c+a,d+b)に、操作Bで(a,b,c,d)が(a+c,b+d,c,d)になる。
+x,yが与えられるので、初期値(1,0,0,1)から(s,t,u,v) (s+u = x, t+v = y) にする手順を出力せよ。
+不可能な場合はImpossibleを出力。
+gcdが1以外なら不可能、1であれば互除法をやるだけ
+https://en.wikipedia.org/wiki/Stern%E2%80%93Brocot_tree
+
+div1D/div2F
+中間一致で3^13になる
