@@ -1,0 +1,5 @@
+C
+1-abs(x)+abs(abs(x)-1)を使う http://www.wolframalpha.com/input/?i=1-abs(x)%2Babs(abs(x)-1)
+x_i / 2の誤差は高々1なので、r_i >= 2に収まる
+
+D
