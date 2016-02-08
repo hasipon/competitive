@@ -1,0 +1,6 @@
+D
+x > 1なら、
+log(x^y^z) = log(x) * (y^z)
+log((x^y)^z) = log(x) * y * z
+log(log(x^y^z)) = log(log(x)) + log(y) * z
+log(log((x^y)^z)) = log(log(x) * y * z)
