@@ -9,3 +9,4 @@
 2016-01-25 CF334 div2B, xmas2015 G, CF340 div2E, Good Bye 2015 DE  // Mo's Algorithm
 2016-02-01 CF329 http://codeforces.com/blog/entry/21406
 2016-04-04 CF344 http://codeforces.com/contest/631
+2016-04-14 CF245 http://codeforces.com/contest/651
