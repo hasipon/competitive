@@ -11,3 +11,4 @@
 2016-04-04 CF344 http://codeforces.com/contest/631
 2016-04-14 CF345 http://codeforces.com/contest/651
 2016-04-18 CF346 http://codeforces.com/contest/659
+2016-04-25 CF347 http://codeforces.com/contest/664
