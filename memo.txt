@@ -15,3 +15,4 @@
 2016-05-09 CF348 http://codeforces.com/contest/669
 2016-05-17 CF349 http://codeforces.com/contest/667
 2016-05-25 CF350 http://codeforces.com/contest/670
+2016-05-31 CF351 http://codeforces.com/contest/673
