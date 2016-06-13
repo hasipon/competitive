@@ -1,0 +1,5 @@
+div1C / div2E
+長さnの配列aが与えられる。
+weirdness(a) = max gcd(a[i], a[j])
+f(i,j) = weirdness(a[1] ... a[i-1], a[j+1] ... a[n]) とする。
+Σ_i Σ_j f(i,j) を求めよ。
